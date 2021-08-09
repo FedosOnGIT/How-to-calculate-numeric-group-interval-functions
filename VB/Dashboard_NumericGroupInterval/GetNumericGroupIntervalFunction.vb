@@ -7,7 +7,7 @@ Imports System.Threading.Tasks
 
 Namespace Dashboard_NumericGroupInterval
 	Friend Class GetNumericGroupIntervalFunction
-		Implements ICustomFunctionOperatorBrowsable
+		Implements ICustomFunctionOperatorBrowsable, ICustomFunctionOperatorFormattable
 
 		Private Shared Function GetNumericGroupInterval(ByVal number As Double, ByVal intervalNumber As Double) As Double
 			If intervalNumber <= 0 Then
@@ -64,6 +64,10 @@ Namespace Dashboard_NumericGroupInterval
 
 		Public Function ResultType(ParamArray ByVal operands() As Type) As Type Implements DevExpress.Data.Filtering.ICustomFunctionOperator.ResultType
 			Return GetType(Double)
+		End Function
+
+		Public Function Format(ByVal providerType As Type, ParamArray ByVal operands() As String) As String Implements ICustomFunctionOperatorFormattable.Format
+			Return $"SIGN({operands(0)}) * (ABS({operands(0)}) - ABS({operands(0)}) % {operands(1)})"
 		End Function
 	End Class
 End Namespace

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Dashboard_NumericGroupInterval {
-    class GetNumericGroupIntervalFunction : ICustomFunctionOperatorBrowsable {
+    class GetNumericGroupIntervalFunction : ICustomFunctionOperatorBrowsable, ICustomFunctionOperatorFormattable {
 
         static double GetNumericGroupInterval(double number, double intervalNumber) {
             if(intervalNumber <= 0) {
@@ -46,6 +46,10 @@ namespace Dashboard_NumericGroupInterval {
 
         public Type ResultType(params Type[] operands) {
             return typeof(double);
+        }
+
+        public string Format(Type providerType, params string[] operands) { 
+            return $"SIGN({operands[0]}) * (ABS({operands[0]}) - ABS({operands[0]}) % {operands[1]})";
         }
     }
 }

@@ -7,6 +7,7 @@ Namespace Dashboard_NumericGroupInterval
 		Public Sub New()
 			InitializeComponent()
 			dashboardDesigner1.CreateRibbon()
+			Size = New System.Drawing.Size(1200, 600)
 			dashboardDesigner1.LoadDashboard("..\..\Data\NumericGroupIntervalFunctionWithMathValues.xml")
 		End Sub
 	End Class
