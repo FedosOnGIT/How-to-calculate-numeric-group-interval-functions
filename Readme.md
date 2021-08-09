@@ -20,6 +20,12 @@ The following explression calculates the category of cost.
 | --- | --- |
 | Categories of cost | ``` GetNumericGroupInterval([Freight], 100) ``` |
 
+The following code snippet shows how to register numeric group interval function:
+
+```
+CriteriaOperator.RegisterCustomFunction(new GetNumericGroupIntervalFunction());
+```
+
 ## Documentation
 - [Interface to work with client mode](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.ICustomFunctionOperatorBrowsable)
 - [Interface to work with server mode](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.ICustomFunctionOperatorFormattable)
