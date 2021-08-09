@@ -14,7 +14,7 @@ In this example, the first [Chart](https://docs.devexpress.com/Dashboard/14719/w
 
 ![screenshot]
 
-The following explression calculates the category of cost.
+The following expression calculates the category of cost.
 
 | Calculated Field| Expression |
 | --- | --- |
