@@ -14,12 +14,20 @@ In this example, the first [Chart](https://docs.devexpress.com/Dashboard/14719/w
 
 ![screenshot]
 
-The following explression calculates the category of cost.
+The following code snippet shows how to register numeric group interval function:
+
+```
+CriteriaOperator.RegisterCustomFunction(new GetNumericGroupIntervalFunction());
+```
+
+The following expression calculates the category of cost.
 
 | Calculated Field| Expression |
 | --- | --- |
 | Categories of cost | ``` GetNumericGroupInterval([Freight], 100) ``` |
 
 ## Documentation
+- [Interface to work with client mode](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.ICustomFunctionOperatorBrowsable)
+- [Interface to work with server mode](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.ICustomFunctionOperatorFormattable)
 - [Expression Constants, Operators, and Functions](https://docs.devexpress.com/Dashboard/400122/common-features/advanced-analytics/expression-constants-operators-and-functions)
 - [Grouping](https://docs.devexpress.com/Dashboard/116535/common-features/data-shaping/grouping)
