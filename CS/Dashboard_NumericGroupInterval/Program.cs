@@ -20,7 +20,7 @@ namespace Dashboard_NumericGroupInterval {
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
+            UserLookAndFeel.Default.SetSkinStyle("Office 2019 Colorful");
             CriteriaOperator.RegisterCustomFunction(new GetNumericGroupIntervalFunction());
             Application.Run(new Form1());
             

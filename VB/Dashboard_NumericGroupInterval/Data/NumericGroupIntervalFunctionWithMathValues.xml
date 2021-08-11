@@ -53,15 +53,15 @@
       </ResultSchema>
       <ConnectionOptions CloseConnection="true" DbCommandTimeout="300" />
       <CalculatedFields>
-        <CalculatedField Name="Categories of cost" Expression="ToLong(GetNumericGroupInterval([Freight], 100))" DataType="Auto" DataMember="Orders" />
+        <CalculatedField Name="Price Category" Expression="ToLong(GetNumericGroupInterval([Freight], 100))" DataType="Auto" DataMember="Orders" />
       </CalculatedFields>
     </SqlDataSource>
   </DataSources>
   <Items>
-    <Chart ComponentName="chartDashboardItem1" Name="Orders by Cost category" DataSource="dashboardSqlDataSource1" DataMember="Orders">
+    <Chart ComponentName="chartDashboardItem1" Name="Orders by Price Category" DataSource="dashboardSqlDataSource1" DataMember="Orders">
       <DataItems>
         <Measure DataMember="OrderID" SummaryType="Count" DefaultId="DataItem0" />
-        <Dimension DataMember="Categories of cost" IsDiscreteScale="true" DefaultId="DataItem1">
+        <Dimension DataMember="Price Category" IsDiscreteScale="true" DefaultId="DataItem1">
           <NumericFormat FormatType="Number" Precision="0" Unit="Ones" />
         </Dimension>
       </DataItems>
@@ -78,9 +78,9 @@
         </Pane>
       </Panes>
     </Chart>
-    <Chart ComponentName="chartDashboardItem2" Name="Total cost by Category " DataSource="dashboardSqlDataSource1" DataMember="Orders">
+    <Chart ComponentName="chartDashboardItem2" Name="Total Sales by Price Category " DataSource="dashboardSqlDataSource1" DataMember="Orders">
       <DataItems>
-        <Dimension DataMember="Categories of cost" IsDiscreteScale="true" DefaultId="DataItem0">
+        <Dimension DataMember="Price Category" IsDiscreteScale="true" DefaultId="DataItem0">
           <NumericFormat FormatType="Number" Precision="0" Unit="Ones" />
         </Dimension>
         <Measure DataMember="Freight" DefaultId="DataItem1" />
@@ -100,9 +100,9 @@
     </Chart>
   </Items>
   <LayoutTree>
-    <LayoutGroup>
-      <LayoutItem DashboardItem="chartDashboardItem1" Weight="0.78031212484994" />
-      <LayoutItem DashboardItem="chartDashboardItem2" Weight="0.78031212484994" />
+    <LayoutGroup Weight="100">
+      <LayoutItem DashboardItem="chartDashboardItem1" Weight="47.328244274809158" />
+      <LayoutItem DashboardItem="chartDashboardItem2" Weight="52.671755725190842" />
     </LayoutGroup>
   </LayoutTree>
 </Dashboard>
