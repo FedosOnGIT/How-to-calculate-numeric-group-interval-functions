@@ -14,13 +14,13 @@ In this example, the _Orders by Price Category_ [chart](https://docs.devexpress.
 
 ![orders and sales by price category](images/numeric-group-interval.png)
 
-The following expression calculates price categories:
+The following expression calculates a price category:
 
 | Calculated Field| Expression |
 | --- | --- |
 | Price Category | ``` GetNumericGroupInterval([Freight], 100) ``` |
 
-Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register custom function in your project. The following code snippet shows how to register the numeric group interval function: 
+Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project. The following code snippet shows how to register the numeric group interval function: 
 
 [Program.cs](./CS/Dashboard_FiscalFunctions/Program.cs):
 ```csharp
