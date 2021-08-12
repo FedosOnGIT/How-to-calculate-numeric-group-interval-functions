@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [Form1.cs](./CS/Dashboard_NumericGroupInterval/Form1.cs) ([Form1.vb](./CS/Dashboard_NumericGroupInterval/Form1.vb))
-* [GetNumericGroupIntervalFunction.cs](./CS/Dashboard_NumericGroupInterval/GetNumericGroupIntervalFunction.cs) ([GetNumericGroupIntervalFunction.vb](./CS/Dashboard_NumericGroupInterval/GetNumericGroupIntervalFunction.cs))
+* [GetNumericGroupIntervalFunction.cs](./CS/Dashboard_NumericGroupInterval/GetNumericGroupIntervalFunction.cs) ([GetNumericGroupIntervalFunction.vb](./VB/Dashboard_NumericGroupInterval/GetNumericGroupIntervalFunction.vb))
 <!-- default file list end -->
 # Dashboard for WinForms - How to Calculate the Numeric Group Interval
 
