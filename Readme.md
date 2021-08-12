@@ -10,7 +10,7 @@ This example shows how to add a custom function that allows you to group data by
 
 ## Overview
 
-In this example, the _Orders by Price Category_ [chart](https://docs.devexpress.com/Dashboard/14719/winforms-dashboard/winforms-designer/create-dashboards-in-the-winforms-designer/dashboard-item-settings/chart) dashboard item displays the number of orders for each price category, and the _Total Sales by Price Categoty_ chart displays total sales for each price category.
+In this example, the _Orders by Price Category_ [chart](https://docs.devexpress.com/Dashboard/14719/winforms-dashboard/winforms-designer/create-dashboards-in-the-winforms-designer/dashboard-item-settings/chart) dashboard item displays the number of orders for each price category and the _Total Sales by Price Categoty_ chart displays total sales for each price category.
 
 ![orders and sales by price category](images/numeric-group-interval.png)
 
