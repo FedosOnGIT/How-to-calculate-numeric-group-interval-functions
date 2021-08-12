@@ -6,7 +6,7 @@
 <!-- default file list end -->
 # Dashboard for WinForms - How to Calculate the Numeric Group Interval
 
-This example shows how to add a custom function that allows you to group data by specified criterion in the WinForm dashboard.
+This example shows how to add a custom function that allows you to group data by specified criteria in the WinForm dashboard.
 
 ## Overview
 
@@ -14,13 +14,13 @@ In this example, the _Orders by Price Category_ [chart](https://docs.devexpress.
 
 ![orders and sales by price category](images/numeric-group-interval.png)
 
-The following expression calculates a price category:
+The following expression calculates price categories:
 
 | Calculated Field| Expression |
 | --- | --- |
 | Price Category | ``` GetNumericGroupInterval([Freight], 100) ``` |
 
-Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project. The following code snippet shows how to register the numeric group interval function: 
+Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project. The following code snippet shows how to register the numeric group interval's function: 
 
 [Program.cs](./CS/Dashboard_FiscalFunctions/Program.cs):
 ```csharp
