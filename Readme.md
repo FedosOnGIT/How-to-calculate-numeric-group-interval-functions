@@ -3,6 +3,7 @@
 
 * [Form1.cs](./CS/Dashboard_NumericGroupInterval/Form1.cs) ([Form1.vb](./CS/Dashboard_NumericGroupInterval/Form1.vb))
 * [GetNumericGroupIntervalFunction.cs](./CS/Dashboard_NumericGroupInterval/GetNumericGroupIntervalFunction.cs) ([GetNumericGroupIntervalFunction.vb](./VB/Dashboard_NumericGroupInterval/GetNumericGroupIntervalFunction.vb))
+* [Program.cs](./CS/Dashboard_FiscalFunctions/Program.cs#L24) ([Program.vb](./VB/Dashboard_FiscalFunctions/Program.vb#L24))
 <!-- default file list end -->
 # Dashboard for WinForms - How to Calculate the Numeric Group Interval
 
@@ -20,46 +21,7 @@ The following expression calculates price categories:
 | --- | --- |
 | Price Category | ``` GetNumericGroupInterval([Freight], 100) ``` |
 
-Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project. The following code snippet shows how to register the numeric group interval's function: 
-
-[Program.cs](./CS/Dashboard_FiscalFunctions/Program.cs):
-```csharp
-using System;
-using System.Windows.Forms
-using DevExpress.Data.Filtering;
-
-namespace Dashboard_NumericGroupInterval {
-    static class Program {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main() {
-        // ...
-            CriteriaOperator.RegisterCustomFunction(new GetNumericGroupIntervalFunction());
-            Application.Run(new Form1());  
-        }
-    }
-}
-```
-[Program.vb](./VB/Dashboard_FiscalFunctions/Program.vb):
-```vb
-Imports DevExpress.Data.Filtering
-
-namespace Dashboard_NumericGroupInterval 
-    Friend Module Program
-	''' <summary>
-	''' The main entry point for the application.
-	''' </summary>
-	<STAThread>
-	Sub Main()
-	' ...
-	    CriteriaOperator.RegisterCustomFunction(New GetNumericGroupIntervalFunction())
-	    Application.Run(New Form1())
-	End Sub
-    End Module
-End Namespace
-```
+Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project (see:  [Program.cs](./CS/Dashboard_FiscalFunctions/Program.cs#L24)/[Program.vb](./VB/Dashboard_FiscalFunctions/Program.vb#L24)). 
 ## Documentation
 
 - [ICustomFunctionOperatorBrowsable](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.ICustomFunctionOperatorBrowsable)
