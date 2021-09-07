@@ -6,7 +6,7 @@
 <!-- default file list end -->
 # Dashboard for WinForms - How to Calculate the Numeric Group Interval
 
-This example shows how to add a custom function that allows you to group data by the specified criterion in the WinForm dashboard.
+This example shows how to add a custom function in a client mode. The function allows you to group data by the specified criterion in the WinForm dashboard.
 
 ## Overview
 
